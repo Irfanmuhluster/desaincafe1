@@ -1,0 +1,61 @@
+.menu {
+    display: flex;    
+    @include for-tablet-landscape-up {
+        flex-direction: row;
+    }
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: $coolGray-50;
+    bottom: auto;
+    .menu-box {
+        flex: 1 1 0%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: $border-radius-md;
+        box-shadow: $shadow-sm;
+        text-align: left;
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        background-color: $orange-400;
+        .icon {
+            display: flex;
+            .flex-img {
+                padding: 1rem;
+                border-radius: 0.25rem;
+                background-color: $orange-400;
+            }
+            .menu-image {
+                width: 100%;
+                height: auto;
+                // border-radius: $border-radius-md;
+            }
+        }
+        .menu-welcome-by {
+            font-weight: $font-medium;
+            color: $cyan-600;
+        }
+        .menu-welcome-level {
+            color: $gray-500;
+        }
+        .menu-title {
+            padding-left: 1rem;
+            color: white;
+            padding-top: 1.5rem;
+            font-weight: $font-bold;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        p {
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 1rem;
+            font-weight: $font-medium;
+            @include text-base();
+            color: white;
+        }
+    }
+}

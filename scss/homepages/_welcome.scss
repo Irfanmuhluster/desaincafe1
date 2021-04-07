@@ -1,0 +1,11 @@
+.welcome {
+    // padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 12rem;
+    padding-right: 12rem;
+    text-align: center;
+    color: $coolGray-700;
+    @include text-lg();
+    font-weight: 300;
+    letter-spacing: $tracking-wider;
+}

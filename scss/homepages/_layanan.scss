@@ -1,0 +1,77 @@
+.service {
+    display: flex;    
+    @include for-tablet-landscape-up {
+        flex-direction: row;
+    }
+    flex-direction: column;
+    width: 100%;
+    padding-top: 1.5rem;
+    padding-bottom: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    background-color: $coolGray-50;
+    bottom: auto;
+    .service-box {
+        flex: 1 1 0%;
+        width: 100%;
+        overflow: hidden;
+        border-radius: $border-radius-md;
+        box-shadow: $shadow-sm;
+        background-color: white;
+        text-align: left;
+        padding: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: $coolGray-800;
+        .icon {
+            display: flex;
+            .flex-icon-1 {
+                padding: 1rem;
+                border-radius: 0.25rem;
+                width: 60px;
+                height: 60px;
+                background-color: $fuchsia-100;
+            }
+            .flex-icon-2 {
+                padding: 1rem;
+                border-radius: 0.25rem;
+                width: 60px;
+                height: 60px;
+                background-color: $amber-100;
+            }
+            .flex-icon-3 {
+                padding: 1rem;
+                border-radius: 0.25rem;
+                width: 60px;
+                height: 60px;
+                background-color: $rose-100;
+            }
+            .flex-icon-4 {
+                padding: 1rem;
+                border-radius: 0.25rem;
+                width: 60px;
+                height: 60px;
+                background-color: $cyan-100;
+            }
+        }
+        .service-welcome-by {
+            font-weight: $font-medium;
+            color: $cyan-600;
+        }
+        .service-welcome-level {
+            color: $gray-500;
+        }
+        .service-title {
+            padding-top: 1.5rem;
+            text-align: left;
+            font-weight: $font-bold;
+            font-size: 1.125rem;
+            line-height: 1.75rem;
+        }
+        p {
+            text-align: left;
+            font-weight: $font-medium;
+            @include text-base();
+        }
+    }
+}
