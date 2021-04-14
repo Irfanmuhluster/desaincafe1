@@ -4,6 +4,7 @@
   "description": "belajar gulp",
   "main": "index.js",
   "dependencies": {
+    "bootstrap": "^5.0.0-beta3",
     "node-sass": "^5.0.0"
   },
   "devDependencies": {

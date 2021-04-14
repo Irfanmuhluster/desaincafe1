@@ -1,5 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+$primary: rgb(234,88,12);
+
+$theme-colors: (
+    "primary": $primary
+);
+
+// extend color , customyour own color
+$custom-color: (
+    "icon-background": rgba(234,88,12,0.25)
+);
+
+$merge-colors: map-merge($theme-colors , $custom-color );
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 @import "variables";
 @import "mixins";

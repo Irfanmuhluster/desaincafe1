@@ -4,55 +4,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel='stylesheet' id='slick-css'  href='css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='style-css'  href='css/styles.css' type='text/css' media='all' />
+    <link rel='stylesheet' id='bootstrap-icon-css'  href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css' media='all' />
+
     <link rel='stylesheet' id='slick-css'  href='vendor/slick/slick.css' type='text/css' media='all' />
     <link rel='stylesheet' id='slick-theme-css'  href='vendor/slick/slick-theme.css' type='text/css' media='all' />
+    
 
-    <script type='text/javascript' src='js/jquery.min.js'></script>   
-    <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js' id='jquery-js-js'></script>
-    <script type='text/javascript' src='vendor/slick/slick.min.js' id='slick-js-js'></script>   
     <title>Document</title>
 </head>
 <body>
-    <header class="container">
-        <div class="bar-logo">
+    <header class="site-header">
+        <div class="bar-logo d-none d-lg-flex d-xl-flex">
             <div class="bar-logo_img">
                 <img src="images/pngegg.png" alt="" srcset="">
             </div>
         </div>
-        <nav id="navbar-header" class="navbar container navbar-fixed">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm bg-light main-navigation px-3 py-3 bg-primary">
 
-            <div class="navbar-btn"  id="nav-btn">
-                <div class="navbar-links">
-                    <ul class="navbar-nav">
-                        <li class="nav-link">
-                            <a href="#">Home</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#paket">Paket</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#fitur">Fitur</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#desain">Desain</a>
-                        </li>
-                        <li class="nav-link">
-                            <a href="#kontak">Hubungi Kami</a>
-                        </li>
-                       
-                    </ul>
+            <div class="container  d-flex justify-content-lg-center justify-content-md-start">
+                <div class="row align-items-center">
+					
+					<div class="col-12 text-lg-center  text-md-left">
+                        <div class="menu-menu-1-container">
+                                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class=" navbar-toggler-icon"></span>
+                                </button>
+                                <a class="navbar-brand" href="#">
+                                <div class="bar-logo p-0 border-bottom-0 bg-transparent  d-lg-none d-md-block ">
+                                    <div class="bar-logo_img">
+                                        <img src="images/pngegg.png" alt="" srcset="">
+                                    </div>
+                                </div>
+                                </a>
+                           
+                          <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                            <ul id="primary-menu"  class="nav-menu navbar-nav ms-auto text-lg-center  mb-2 mb-lg-0">
+                                <li>
+                                    <a href="#">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#paket">Paket</a>
+                                </li>
+                                <li>
+                                    <a href="#fitur">Fitur</a>
+                                </li>
+                                <li>
+                                    <a href="#desain">Desain</a>
+                                </li>
+                                <li>
+                                    <a href="#kontak">Hubungi Kami</a>
+                                </li>
+                        
+                            </ul>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
-            </div>
-            <div class="hambergur-menu-container">
-                <div class="hambergur-menu">
-                    <!-- hide show  -->
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z" clip-rule="evenodd" />
-                      </svg>
-                </div>
-            </div>
+			</div>
         </nav>
     </header>
     <main>
@@ -118,7 +128,7 @@
                 </div>
                 <div class="menu-box">
                     <div class="icon">
-                        <img class="menu-image" src="images/steak-ayam.jpg" alt="">
+                        <img class="menu-image" src="images/jual-ayam-geprek-saus-bbq-nasi-082-247-643-555.jpg" alt="">
                     </div>
                     <div class="menu-title text-left">Mobile</div>
                     <div class="text-left"> <p>“Bila jenuh kesini, bila ada kerjaan kesini , enak untuk kerja enak untuk santai”</p></div>
@@ -161,7 +171,6 @@
             </div>
         </div>
 
-        <div class="container">
         <div class="banner" style="background-image: url('images/set-ginger-honey-dry-cinnamon-tea-green-lemon-dark-wooden-background-top-view-space-text.jpg');">
             <div class="banner-items">
                 <div>
@@ -175,7 +184,15 @@
         <div class="copyright">
             <p>Copyright 2020  Irvan.dev - All Rights Reserved</p>
         </div>
-        <script type='text/javascript' src='js/app.js'></script> 
+        
+  <script type='text/javascript' src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type='text/javascript' src='vendor/slick/slick.min.js' id='slick-js-js'></script>   
+  <script type='text/javascript' src='js/navigation.js' id='site-js-js'></script>  
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+         
+        <!-- <script type='text/javascript' src='js/app.js'></script>  -->
     </main>
 
     <script>
